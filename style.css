@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template: 1fr 3.5fr/ 1fr 5fr;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: white;
+    padding: 30px 105px 30px 55px;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    gap: 25%;
+}
+
+.top div{
+    display: flex;
+    gap: 15px;
+}
+.search {
+    display: flex;
+    flex: 1;
+    height: 35px;
+    justify-content: center;
+}
+
+input {
+    flex: 1;
+    border-radius: 15px;
+    border: none ;
+    background-color: #CBD5E1; 
+}
+
+.bottom{
+    display: flex;
+}
+
+.left{
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.left>div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.left>div>div:last-child{
+    font-size: 25px;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-color: #27272A;
+    color: white;
+    
+}
+
+.dashboard{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    font-size: 22px;
+    margin-top: 12%;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+}
+.main{
+    background-color: #CBD5E1;
+}
