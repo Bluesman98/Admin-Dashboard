@@ -56,6 +56,11 @@ input {
     width: 50px;
     aspect-ratio: 1;
 }
+.profile-pic img{
+    width: 50px;
+    aspect-ratio: 1;
+}
+
 
 .profile-pic-big{
     width: 80px;
@@ -263,7 +268,7 @@ gap: 5px;
     background-color: white;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    padding: 20px;
+    padding: 0.1rem 20px 0.1rem 20px;
 }
 
 .title{
@@ -280,18 +285,26 @@ gap: 5px;
 .trending {
     display: flex;
     flex-direction: column;
-    flex: 1
+    flex: 1;
 }
 
 
 .trending>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: white;
     flex: 1;
-    padding: 20px;
+    padding: 20px 10px 20px 20px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;  
+
 }
 
+.trending>div>div{
+    display: flex;
+    gap: 8px;
+}
 .username{
     color: black;
 }
