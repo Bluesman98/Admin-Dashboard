@@ -175,6 +175,19 @@ button:hover{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; 
  }
 
+ .reference{
+     margin-bottom: 5px;
+     margin-top: auto;
+     margin-left: 1rem;
+ }
+
+ .reference>a{
+
+     font-size: 10px;
+     text-decoration: none;
+     color: white;
+ }
+
 .main{
     grid-column: 2/3;
     grid-row: 2/3;
