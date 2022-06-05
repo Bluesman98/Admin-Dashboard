@@ -5,17 +5,19 @@ body{
 .container{
     height: 100vh;
     display: grid;
-    grid-template: 1fr 3.5fr/ 1fr 5fr;
+    grid-template: 1fr 3fr/ 1fr 5fr;
 }
 
 .header{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: space-between;
     grid-column: 2/3;
     grid-row: 1/2;
     background-color: white;
-    padding: 30px 105px 30px 55px;
+    padding: 30px 5% 30px 55px;
+    gap: 35%;
 }
 
 .top{
@@ -33,13 +35,19 @@ body{
     flex: 1;
     height: 35px;
     justify-content: center;
+    align-items: stretch;
+    gap: 5px;
+}
+
+.search div{
+    align-self: center;
 }
 
 input {
     flex: 1;
     border-radius: 15px;
     border: none ;
-    background-color: #CBD5E1; 
+    background-color: #C7D2FE; 
 }
 
 .bottom{
@@ -54,12 +62,12 @@ button{
     font-size: 18px;
     width: 120px;
     color: white;
-    background-color: #27272A ;
+    background-color: #4F46E5 ;
     border: none;
 }
 
 button:hover{
-    background-color: #991B1B;
+    background-color: #F97316;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -72,7 +80,7 @@ button:hover{
 .left>div{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 3px;
 }
 
 .left>div>div:last-child{
@@ -92,13 +100,13 @@ button:hover{
     padding: 30px;
     grid-column: 1/2;
     grid-row: 1/3;
-    background-color: #27272A;
+    background-color: #4F46E5;
     color: white;
     
 }
 
 .nav a:hover{
-   color: #991B1B; 
+   color: #F97316; 
 }
 
 .dashboard{
@@ -113,17 +121,26 @@ button:hover{
     font-size: 22px;
     margin-top: 12%;
 }
+
+.nav>div{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
 .nav a{
     text-decoration: none;
     color: white;
 }
 
 .main{
+    grid-column: 2/3;
+    grid-row: 2/3;
     display: grid;
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: 10fr 1fr;
-    background-color: #CBD5E1; 
+    background-color: #C7D2FE; 
     color: #585858;
+    padding-bottom: 50px;
+
 }
 
 .projects{
@@ -163,14 +180,14 @@ button:hover{
 
 .stripe{
     grid-column: 1/2;
-    background-color: #991B1B;
+    background-color: #F97316;
     border-radius: 10px 0 0 10px;
 }
 
 .card>:last-child{
 display: flex;
 flex-direction: column;
-padding: 15px;
+padding: 30px 20px 30px 20px;
 gap: 5px;
 }
 
@@ -185,7 +202,15 @@ gap: 5px;
     display: flex;
     justify-content: end;
     align-items:flex-end end;
-    gap: 3px;
+    gap: 25px;
+}
+
+.icons a{
+    color: black;
+}
+
+.icons a:hover{
+    color: #F97316;
 }
 
 .main-right{
