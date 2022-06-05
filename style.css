@@ -59,8 +59,7 @@ button{
 }
 
 button:hover{
-    background-color: white;
-    color: #27272A;
+    background-color: #991B1B;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -98,6 +97,10 @@ button:hover{
     
 }
 
+.nav a:hover{
+   color: #991B1B; 
+}
+
 .dashboard{
     font-size: 30px;
     font-weight: bold;
@@ -120,6 +123,7 @@ button:hover{
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 10fr 1fr;
     background-color: #CBD5E1; 
+    color: #585858;
 }
 
 .projects{
@@ -133,6 +137,7 @@ button:hover{
 .projects>p{
     font-weight: bold;
     font-size: 18px;
+    color: black;
 }
 .project-grid{
     flex:1;
@@ -172,6 +177,7 @@ gap: 5px;
 .card>:nth-child(2)>:first-child{
     font-size: 18px;
     font-weight: bold;
+    color: black;
 }
 
 .icons{
@@ -194,6 +200,7 @@ gap: 5px;
 .main-right>div>p{
     font-weight: bold;
     font-size: 18px;
+    color: black;
 }
 
 .annoucements {
@@ -212,6 +219,7 @@ gap: 5px;
 .title{
     font-weight: bold;
     font-size: 15px;
+    color: black;
 }
 .line{
     color: #CBD5E1;
@@ -231,5 +239,21 @@ gap: 5px;
     flex: 1;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;  
+}
+
+.trending-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 30px 40px 30px;
+}
+
+.trending-container>div{
+    display: flex;
+    gap: 15px;
+}
+
+.username{
+    color: black;
 }
 
