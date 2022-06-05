@@ -124,21 +124,22 @@ button:hover{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 30px;
     grid-column: 1/2;
     grid-row: 1/3;
     background-color: #4F46E5;
-    color: white;
-    
-}
-
-.nav a:hover{
-   color: #F97316; 
+    color: white; 
 }
 
 .dashboard{
+    margin-top: 1.5rem;
+    display: flex;
     font-size: 30px;
     font-weight: bold;
+    padding: 1rem;
+    gap: 5px;
+}
+.dashboard>div{
+    align-self: center;
 }
 
 .nav{
@@ -146,18 +147,33 @@ button:hover{
     flex-direction: column;
     gap: 13px;
     font-size: 22px;
-    margin-top: 12%;
+    margin-top: 9%;
 }
 
-.nav>div{
+
+.nav>div:hover{
+    color: #F97316;
+    border-left: 0.3rem solid #F97316;
+}
+
+.nav>div>a{
     display: flex;
     align-items: center;
     gap: 10%;
+    padding-left: 12%;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
 }
+
 .nav a{
     text-decoration: none;
     color: white;
 }
+
+.nav a:hover{
+    color: #F97316; 
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; 
+ }
 
 .main{
     grid-column: 2/3;
@@ -247,8 +263,6 @@ gap: 5px;
     flex-direction: column;
     grid-template-rows: 1/2;
     padding-right: 30px;
-    padding-top: 0px;
-
 }
 
 .main-right>div>p{
